@@ -1,0 +1,32 @@
+.navigation{
+    padding: 10px;
+    justify-content: space-between;
+
+    .logo{
+        width: 10%;
+
+        img{
+            width:180px;
+            height: 60px;
+            object-fit: contain;
+        }
+
+    }
+    .mynav{
+        width: 90%;
+        justify-content: flex-end;
+
+        li{
+
+            a{
+               color: $headColor; 
+                font-size: 0.85rem;
+                text-transform: uppercase;
+            } 
+        }
+
+
+    }
+
+
+}  
