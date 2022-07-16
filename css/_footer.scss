@@ -1,0 +1,13 @@
+.footer{
+    @include section;
+    text-align: center;
+    p{
+        font-size: 1.2rem;
+        abbr{
+            color: $primeColor;
+            text-decoration: none;
+        }
+    }
+
+
+}

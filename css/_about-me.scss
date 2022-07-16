@@ -1,0 +1,36 @@
+.about-me{
+    @include section;
+
+    .about-nav{
+        padding: 20px 0;
+        align-items: center;
+        text-align: center;
+        @include box;
+        border-radius: 15px;
+        border: none;
+        text-transform: uppercase;
+        li{
+            width: 33%;
+
+            a{
+                font-size: 0.85rem;
+                color: $secondheadColor;
+                border-radius: 8px;
+
+            }
+            a.active{
+                @include box;
+                padding: 20px;
+                margin: 0 20px;
+                border: none;
+                border-radius: 8px;
+            }
+
+
+        }
+
+    }
+
+
+
+}

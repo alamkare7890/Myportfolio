@@ -1,6 +1,13 @@
 .myskill{
     @include section;
 
+    .skill-head{
+        padding: 20px 0;
+        h3{
+            color: $headColor;
+        }
+    }
+
     .skill{
         padding: 30px;
         @include box;
@@ -14,7 +21,7 @@
         }
         h3{
             color: $headColor;
-            text-transform: uppercase;
+            text-transform: capitalize;
             padding-top: 25px;
         }
         p{

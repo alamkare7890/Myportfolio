@@ -10,8 +10,9 @@
   cursor: pointer;
 }
 
-.my-btn {
-  color: #F8024E;
+.social-icon li i {
+  justify-content: center;
+  align-items: center;
 }
 
 /*
@@ -163,6 +164,7 @@ html, body {
   line-height: 1.5;
   font-family: "Poppins", sans-serif;
   background-color: #212428;
+  position: relative;
 }
 
 .main-head {
@@ -174,6 +176,13 @@ html, body {
 .secondary-head {
   font-size: 1.5rem;
   font-weight: 500;
+  padding-top: 10px;
+}
+
+.small-head {
+  font-size: 1rem;
+  font-weight: 500;
+  padding-top: 10px;
 }
 
 .flex-content {
@@ -201,9 +210,42 @@ html, body {
   color: #878e99;
 }
 
+.prime-title {
+  color: #F8024E;
+}
+
+.my-btn {
+  color: #F8024E;
+}
+
+.see-btn {
+  padding: 12px 20px;
+}
+
+.flex-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social-icon li {
+  position: fixed;
+  top: 50%;
+  right: 0;
+}
+.social-icon li i {
+  display: inline-block;
+  color: #F8024E;
+  display: flex;
+  width: 65px;
+  height: 65px;
+  background-color: #212428;
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  border-radius: 5px;
+}
+
 /*===============nav-section===============*/
 .header-section {
-  padding: 50px 0;
+  padding-bottom: 50px;
   padding-top: 0;
 }
 .header-section .myintro {
@@ -269,7 +311,13 @@ html, body {
 
 /*====--------myskill-section-----------=======*/
 .myskill {
-  padding: 50px 0;
+  padding-bottom: 50px;
+}
+.myskill .skill-head {
+  padding: 20px 0;
+}
+.myskill .skill-head h3 {
+  color: #fff;
 }
 .myskill .skill {
   padding: 30px;
@@ -286,7 +334,7 @@ html, body {
 }
 .myskill .skill h3 {
   color: #fff;
-  text-transform: uppercase;
+  text-transform: capitalize;
   padding-top: 25px;
 }
 .myskill .skill p {
@@ -299,24 +347,114 @@ html, body {
 
 /*========--------projects-section-----------===*/
 .my-project {
-  padding: 50px 0;
+  padding-bottom: 50px;
+}
+.my-project .project-head {
+  padding: 20px 0;
+}
+.my-project .project-head h3 {
+  color: #fff;
 }
 .my-project .my-demo {
   background-color: #212428;
   box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
   border-radius: 15px;
   padding: 30px;
+  margin-bottom: 50px;
 }
 .my-project .my-demo img {
   width: 100%;
-  height: 300px;
+  height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
-  overflow: scroll;
+  overflow-y: scroll;
   -o-object-position: top;
      object-position: top;
 }
+.my-project .my-demo h3 {
+  color: #fff;
+  padding-top: 25px;
+}
+.my-project .my-demo p {
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+}
 
 /*===============about-section===============*/
+.about-me {
+  padding-bottom: 50px;
+}
+.about-me .about-nav {
+  padding: 20px 0;
+  align-items: center;
+  text-align: center;
+  background-color: #212428;
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  border-radius: 15px;
+  border: none;
+  text-transform: uppercase;
+}
+.about-me .about-nav li {
+  width: 33%;
+}
+.about-me .about-nav li a {
+  font-size: 0.85rem;
+  color: #878e99;
+  border-radius: 8px;
+}
+.about-me .about-nav li a.active {
+  background-color: #212428;
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  padding: 20px;
+  margin: 0 20px;
+  border: none;
+  border-radius: 8px;
+}
+
 /*===============contact-section===============*/
-/*===============footer-section===============*//*# sourceMappingURL=style.css.map */
+.contact {
+  padding-bottom: 50px;
+}
+.contact .location {
+  padding: 20px;
+  background-color: #212428;
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  border-radius: 15px;
+}
+.contact .location iframe {
+  width: 100%;
+  height: 350px;
+}
+.contact .connect-me {
+  padding: 30px;
+  background-color: #212428;
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  border-radius: 15px;
+}
+.contact .connect-me h3 {
+  color: #fff;
+}
+.contact .connect-me .phone, .contact .connect-me .email {
+  padding: 15px 0;
+}
+.contact .connect-me .phone span, .contact .connect-me .email span {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 0.85rem;
+}
+
+/*===============footer-section===============*/
+.footer {
+  padding-bottom: 50px;
+  text-align: center;
+}
+.footer p {
+  font-size: 1.2rem;
+}
+.footer p abbr {
+  color: #F8024E;
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */

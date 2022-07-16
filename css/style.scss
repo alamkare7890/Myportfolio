@@ -28,10 +28,7 @@ $inner-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgb
     cursor: pointer;
 
 }  
-.my-btn{
-    @extend %mainBtn;
-    color: $primeColor;  
-}  
+
      
 %flexCenter{ 
     justify-content: center; 
@@ -180,7 +177,14 @@ ul{
 }
 
 @mixin section {
-    padding: 50px 0; 
+    padding-bottom: 50px;
+}
+@mixin line{
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
 }
  
 *{
@@ -196,6 +200,8 @@ html,body{
     line-height: 1.5;
     font-family: $mainFont;
     background-color: $mainbgColor; 
+    position: relative
+
 }
 
 .main-head{
@@ -207,6 +213,12 @@ html,body{
 .secondary-head{
     font-size: 1.5rem;
     font-weight: 500;
+    padding-top: 10px;
+}
+.small-head{
+    font-size: 1rem;
+    font-weight: 500;
+    padding-top: 10px;
 }
 .flex-content{
     display: flex;
@@ -230,6 +242,48 @@ html,body{
     padding-bottom: 15px;
     color: $secondheadColor;
 }
+.prime-title{
+    color: $primeColor;
+}
+.my-btn{
+    @extend %mainBtn;
+    color: $primeColor;  
+}  
+.see-btn{
+    padding: 12px 20px;
+}
+.flex-box{
+    display: flex;
+    flex-wrap: wrap;
+}
+.social-icon{
+
+    li{
+
+        position: fixed;
+        top: 50%;
+        right: 0;
+        
+        i{
+            display: inline-block;
+            color: $primeColor;  
+            display: flex;  
+            @extend %flexCenter;
+            width: 65px;
+            height: 65px;
+            @include box;
+            border-radius: 5px;
+        }
+
+    }
+    
+
+
+
+}
+
+
+
 /*===============nav-section===============*/
 @import "header";
 /*===============nav-section===============*/
