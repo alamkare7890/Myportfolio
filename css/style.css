@@ -152,7 +152,7 @@ html, body {
 }
 
 .main-head {
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   font-weight: 700;
 }
 
@@ -171,7 +171,20 @@ html, body {
   margin: 0 auto;
 }
 
-/*===============header-section===============*/
+.title {
+  font-size: 0.85rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  color: #878e99;
+}
+
+/*===============nav-section===============*/
+.header-section {
+  padding: 50px 0;
+}
+
+/*===============nav-section===============*/
 .navigation {
   padding: 10px;
   justify-content: space-between;

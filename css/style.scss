@@ -171,7 +171,9 @@ ul{
 */
 /*=============fonts-==============*/
 
-
+@mixin section {
+    padding: 50px 0; 
+}
  
 *{
     padding: 0;
@@ -188,8 +190,9 @@ html,body{
 }
 
 .main-head{
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     font-weight: 700;
+
 
 }
 .secondary-head{
@@ -204,7 +207,16 @@ html,body{
     max-width: 1366px;
     margin: 0 auto;
 }
-/*===============header-section===============*/
+.title{
+    font-size: 0.85rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    color: $secondheadColor;
+}
+/*===============nav-section===============*/
+@import "header";
+/*===============nav-section===============*/
 @import "nav";
 /*====--------myskill-section-----------=======*/
 @import "myskill";
