@@ -1,0 +1,20 @@
+.my-project{
+    @include section;
+
+    .my-demo{
+       @include box;
+        border-radius: 15px;
+        padding: 30px;
+
+        img{
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            overflow: scroll;
+            object-position: top;
+        }
+
+    }
+
+
+}

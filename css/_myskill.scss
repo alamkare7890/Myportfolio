@@ -1,0 +1,31 @@
+.myskill{
+    @include section;
+
+    .skill{
+        padding: 30px;
+        @include box;
+        border-radius: 18px;
+        margin-bottom: 50px;
+        svg{
+            width: 85px;
+            height: 85px;
+            fill: $primeColor;  
+            stroke: $primeColor;
+        }
+        h3{
+            color: $headColor;
+            text-transform: uppercase;
+            padding-top: 25px;
+        }
+        p{
+            overflow: hidden;
+            -webkit-line-clamp: 3;
+            display: -webkit-box;
+            text-overflow: ellipsis;
+            -webkit-box-orient: vertical;
+        }
+    }
+
+
+
+}
