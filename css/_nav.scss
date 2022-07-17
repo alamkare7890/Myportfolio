@@ -1,18 +1,16 @@
 .navigation{
     justify-content: space-between;
-
-    .logo{
-        width: 10%;
+    padding: 10px 0;
+    .logo{  
 
         img{
             width:180px;
-            height: 60px;
+            height: 70px;
             object-fit: contain;
         }
 
     }
     .mynav{
-        width: 90%;
         justify-content: flex-end;
 
         li{
@@ -26,6 +24,101 @@
 
 
     }
+   
+    .nav-btn{
+        width: 65px;
+        height: 65px;
+        position: relative;
+        transition: all 0.4s linear;
+        display: flex;
+        border-radius: 5px;
+        @extend %flexCenter;
+        cursor: pointer;
+        display: none; 
 
+    } 
 
+    .nav-btn::before{
+        content: " ";
+        position: absolute;
+        width: 85%;
+        height: 7%;
+        border-radius: 3px;
+        background-color: $primeColor;
+        box-shadow: 0 15px 0 0 $primeColor;
+        transform: translateY(-15px);
+        transition: all 0.4s linear;
+
+    }
+    .nav-btn::after{
+        content: " ";
+        position: absolute;
+        width: 85%;
+        height: 7%;
+        background-color: $primeColor;
+        transform: translateY(15px);
+        border-radius: 3px;
+        transition: all 0.4s linear;
+
+    }
+    .nav-btn:active:before{
+        box-shadow: none;
+        transform: translateY(0) rotate(45deg) ;
+    }   
+    .nav-btn:active:after{
+        transform: translateY(0) rotate(-45deg) ;
+    }   
 }  
+.nav-bg{
+    background-color: transparent;
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+.nav-panel{
+    background-color: $mainbgColor;
+    box-shadow: $shadow;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    transition: all 0.5s ease;
+    animation: navAni 0.8s linear;
+}
+@keyframes navAni {
+    0%{
+        opacity: 0.5;
+    }
+    25%{
+        opacity: 0.6;
+    }
+    50%{
+        opacity: 0.75;
+    }
+    100%{
+        opacity: 1;
+    }    
+
+
+}
+@media  only screen and (max-width:1200px) {
+
+    .navigation{
+        .mynav{
+            display: none; 
+        }
+        .nav-btn{
+            display: flex; 
+            
+        }
+        .course-cer{
+            display: none;
+            
+        }
+
+    }
+
+
+
+
+
+}

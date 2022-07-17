@@ -203,7 +203,13 @@ html,body{
     position: relative
 
 }
+ul{
+    list-style-type: none;
 
+}
+a{
+    text-decoration: none;
+}
 .main-head{
     font-size: 2.5rem;
     font-weight: 700;
@@ -257,31 +263,57 @@ html,body{
     flex-wrap: wrap;
 }
 .social-icon{
-
+    position: fixed;
+    top: 50%;     
+    right: 0;
+    z-index: 10;
     li{
-
-        position: fixed;
-        top: 50%;
-        right: 0;
-        
-        i{
-            display: inline-block;
-            color: $primeColor;  
-            display: flex;  
+        margin: 10px 0;
+        transform: translateX(100px);
+        @extend %flexCenter;
+        padding-bottom: 15px; 
+        transition: all 0.5s ease;
+     
+        .name-icon{
+            color: $primeColor;
+            font-size: 0.85rem;
             @extend %flexCenter;
-            width: 65px;
-            height: 65px;
+            height: 70px;
+            width: 100px;
+            background-color: $bgColor;     
+        }
+        .icon{
+            width: 70px;
+            height: 70px;
+            @extend %flexCenter;
+            font-size: 1.2rem;  
             @include box;
-            border-radius: 5px;
+            color: $headColor;
+
+            a{
+                text-decoration: none;
+
+            }
         }
 
     }
+    
+    li:hover{
+        transform: translateX(0);
+
+        .icon{
+            color: $secondheadColor;
+        }
+        a{
+            text-decoration: none;
+        }
+    }        
+
     
 
 
 
 }
-
 
 
 /*===============nav-section===============*/
