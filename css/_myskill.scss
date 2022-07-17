@@ -1,13 +1,7 @@
 .myskill{
     @include section;
 
-    .skill-head{
-        padding: 20px 0;
-        h3{
-            color: $headColor;
-        }
-    }
-
+   
     .skill{
         padding: 30px;
         @include box;
@@ -25,11 +19,8 @@
             padding-top: 25px;
         }
         p{
-            overflow: hidden;
+            @include line;
             -webkit-line-clamp: 3;
-            display: -webkit-box;
-            text-overflow: ellipsis;
-            -webkit-box-orient: vertical;
         }
     }
 

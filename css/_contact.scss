@@ -19,7 +19,10 @@
         h3{
             color: $headColor;
         }
-
+        p{
+            @include line;
+            -webkit-line-clamp: 3;
+        }
         .phone, .email{
             padding: 15px 0;
 

@@ -1,0 +1,633 @@
+@media only screen and (min-width: 1680px) {
+
+    %mainBtn{
+        padding: 25px 30px;
+        font-size: 0.75rem;
+        background-color: $bgColor;
+        box-shadow: $shadow;
+        text-transform: uppercase;
+        cursor: pointer;
+
+    }  
+
+  
+    /*
+    a{
+        text-decoration: none;
+    }
+    ul{
+        list-style-type: none;
+    }
+    .main-head{
+        font-size: 2.5rem;
+        font-weight: 700;
+        font-family: $secondaryFont;
+        padding-bottom: 10px;
+        color: $textColor;
+
+    }
+    .secondary-head{
+        font-size: 1.5rem;
+        font-weight: 500;
+        font-family: $secondaryFont;
+        padding-bottom: 10px;
+        color: $textColor;
+        line-height: 1.5;
+    }
+    .small-head{
+        font-size: 1.2rem;
+        font-weight: 500;
+        font-family: $secondaryFont;
+        padding-bottom: 10px;
+        color: $textColor;
+        line-height: 1.5;
+        
+    }
+    .flex-content{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .para{
+        font-size: 0.75rem;
+        font-weight: 400;
+        color: $secondheadColor; 
+        padding-bottom: 10px;
+        line-height: 1.5;
+    }
+    .title{
+        font-size: 0.75rem;
+        color: $primeColor;
+        font-weight: 300;
+        text-transform: uppercase;
+        padding-bottom: 10px; 
+        letter-spacing: 1px;
+    }
+    .dif-title{
+        font-size: 0.75rem;
+        color: $secondheadColor;
+        font-weight: 400;
+        text-transform: uppercase; 
+        padding-bottom: 10px;
+
+
+    }
+    .max-width{
+        max-width: 1366px;
+        position: relative;
+    }
+    .max-width::before{
+        content: "";
+        margin-top: 30px;
+        position: absolute;
+        left: 0;    
+        bottom: -60px;
+        width: 100%;
+        height: 5px;
+        background-color: $bgColor;
+    }
+
+    .design-border{
+        border-bottom: 3px solid $bgColor;
+    }
+    .slick-dots{
+        display: flex;
+        flex-wrap: wrap;
+        @extend %flexCenter;
+
+        li{
+            height: 12px;
+            width: 12px;
+            display: flex;
+            flex-wrap: wrap;
+            @extend %flexCenter;
+            border-radius: 50%;
+            margin-right: 20px; 
+            button{ 
+                z-index: 0;
+                box-shadow: $inner-shadow;
+                width: 100%;    
+                background-color: $mainbgColor;
+                height: 100%;
+                font-size: 0; 
+                border: none;   
+                border-radius: 50%;
+                outline: none;
+                cursor: pointer;
+            }
+
+
+        }
+
+        .slick-active{
+            background-color: $primeColor;  
+        }
+    } 
+    .fixed-btn{
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: $bgColor;
+        box-shadow: $shadow;
+        width: 75px;
+        height: 75px;
+        display: flex;
+        @extend %flexCenter;
+        border-radius: 5px;
+        z-index: 100;
+        transition: all 0.4s linear;
+        a{
+            color: $headColor
+        }
+
+    }
+    .fixed-btn:hover{
+        box-shadow: $shadow-2;
+
+    }
+    */
+    @mixin section {
+        padding-bottom: 50px;
+    }
+    html,body{
+        font-size: 24px;
+    }
+   
+    .main-head{
+        font-size: 2.5rem;
+
+    }
+    .secondary-head{
+        font-size: 1.5rem;
+    }
+    .small-head{
+        font-size: 1.2rem;
+    }
+   
+    .para{
+        font-size: 0.85rem;
+    }
+    .title{
+        font-size: 0.85rem;
+    }
+     
+    .see-btn{
+        padding: 12px 20px;
+    }
+ 
+   
+
+
+
+}
+@media only screen and (min-width: 1200px) and (max-width:1680px) {
+
+    %mainBtn{
+        padding: 25px 30px;
+        font-size: 0.85rem;
+        background-color: $bgColor;
+        box-shadow: $shadow;
+        text-transform: uppercase;
+        cursor: pointer;
+
+    }  
+
+  
+    /*
+    a{
+        text-decoration: none;
+    }
+    ul{
+        list-style-type: none;
+    }
+    .main-head{
+        font-size: 2.5rem;
+        font-weight: 700;
+        font-family: $secondaryFont;
+        padding-bottom: 10px;
+        color: $textColor;
+
+    }
+    .secondary-head{
+        font-size: 1.5rem;
+        font-weight: 500;
+        font-family: $secondaryFont;
+        padding-bottom: 10px;
+        color: $textColor;
+        line-height: 1.5;
+    }
+    .small-head{
+        font-size: 1.2rem;
+        font-weight: 500;
+        font-family: $secondaryFont;
+        padding-bottom: 10px;
+        color: $textColor;
+        line-height: 1.5;
+        
+    }
+    .flex-content{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .para{
+        font-size: 0.75rem;
+        font-weight: 400;
+        color: $secondheadColor; 
+        padding-bottom: 10px;
+        line-height: 1.5;
+    }
+    .title{
+        font-size: 0.75rem;
+        color: $primeColor;
+        font-weight: 300;
+        text-transform: uppercase;
+        padding-bottom: 10px; 
+        letter-spacing: 1px;
+    }
+    .dif-title{
+        font-size: 0.75rem;
+        color: $secondheadColor;
+        font-weight: 400;
+        text-transform: uppercase; 
+        padding-bottom: 10px;
+
+
+    }
+    .max-width{
+        max-width: 1366px;
+        position: relative;
+    }
+    .max-width::before{
+        content: "";
+        margin-top: 30px;
+        position: absolute;
+        left: 0;    
+        bottom: -60px;
+        width: 100%;
+        height: 5px;
+        background-color: $bgColor;
+    }
+
+    .design-border{
+        border-bottom: 3px solid $bgColor;
+    }
+    .slick-dots{
+        display: flex;
+        flex-wrap: wrap;
+        @extend %flexCenter;
+
+        li{
+            height: 12px;
+            width: 12px;
+            display: flex;
+            flex-wrap: wrap;
+            @extend %flexCenter;
+            border-radius: 50%;
+            margin-right: 20px; 
+            button{ 
+                z-index: 0;
+                box-shadow: $inner-shadow;
+                width: 100%;    
+                background-color: $mainbgColor;
+                height: 100%;
+                font-size: 0; 
+                border: none;  
+                border-radius: 50%;
+                outline: none;
+                cursor: pointer;
+            }
+
+
+        }
+
+        .slick-active{
+            background-color: $primeColor;  
+        }
+    } 
+    .fixed-btn{
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: $bgColor;
+        box-shadow: $shadow;
+        width: 75px;
+        height: 75px;
+        display: flex;
+        @extend %flexCenter;
+        border-radius: 5px;
+        z-index: 100;
+        transition: all 0.4s linear;
+        a{
+            color: $headColor
+        }
+
+    }
+    .fixed-btn:hover{
+        box-shadow: $shadow-2;
+
+    }
+    */
+    @mixin section {
+        padding-bottom: 50px;
+    }
+    html,body{
+        font-size: 20px;
+    }
+   
+    .main-head{
+        font-size: 3rem;
+
+    }
+    .secondary-head{
+        font-size: 1.5rem;
+    }
+    .small-head{
+        font-size: 1.2rem;
+    }
+   
+    .para{
+        font-size: 0.95rem;
+    }
+    .title{
+        font-size: 0.95rem;
+    }
+     
+    .see-btn{
+        padding: 12px 20px;
+    }
+    
+/*===============nav-section===============*/
+/*===============header-section===============*/
+.header-section{
+        
+    .image{
+
+        img{
+            height: 650px;
+        }
+    }
+
+
+}
+/*====--------myskill-section-----------=======*/
+/*========--------projects-section-----------===*/
+/*===============about-section===============*/
+/*===============contact-section===============*/
+/*===============footer-section===============*/
+/*==============media-section===============*/
+
+
+} 
+@media only screen and (max-width: 1200px){
+
+
+/*===============nav-section===============*/
+/*===============header-section===============*/
+.header-section{
+        
+    .image{
+
+        img{
+            height: 580px;
+        }
+    }
+
+
+}
+/*====--------myskill-section-----------=======*/
+/*========--------projects-section-----------===*/
+/*===============about-section===============*/
+/*===============contact-section===============*/
+.contact{
+
+    .connect-me{
+        padding: 40px;
+    }
+}
+/*===============footer-section===============*/
+/*==============media-section===============*/
+
+
+} 
+@media only screen and (max-width: 991px){
+.content-head{
+    text-align: center;
+}
+
+/*===============nav-section===============*/
+/*===============header-section===============*/
+.header-section{
+        
+    .myintro{
+        padding-top: 50px;
+    }
+
+    .resume{
+        .cert-btn{
+            display: inline-block;
+        }
+
+
+    }
+
+    .image{
+
+        img{
+            height: 600px;
+        }
+    }
+
+
+}
+/*====--------myskill-section-----------=======*/
+/*========--------projects-section-----------===*/
+.my-project{
+
+    .my-demo{
+
+        .btn-box{
+            text-align: center;
+        }
+
+    }
+
+}
+/*===============about-section===============*/
+/*===============contact-section===============*/
+.contact{
+
+    .location{
+        margin-bottom: 40px;
+    }
+}
+/*===============footer-section===============*/
+/*==============media-section===============*/
+
+
+} 
+@media only screen and (max-width: 768px){
+
+
+/*===============nav-section===============*/
+/*===============header-section===============*/
+.header-section{
+        
+    
+    .resume{
+        padding: 30px;
+        .cert-btn{
+            margin-top: 30px;
+        }
+
+
+    } 
+
+
+    .image{
+
+        img{
+            height: 580px;
+        }
+    }
+
+
+}
+/*====--------myskill-section-----------=======*/
+/*========--------projects-section-----------===*/
+
+/*===============about-section===============*/
+/*===============contact-section===============*/
+.contact{
+
+    .connect-me{
+        padding: 40px;
+    }
+}
+/*===============footer-section===============*/
+/*==============media-section===============*/
+
+
+} 
+@media only screen and (max-width: 576px){
+%mainBtn{
+    padding: 18px 20px;
+
+}
+@mixin section{
+    padding: 30px;
+}
+.main-head{
+
+    font-size: 2.5rem;
+}
+
+/*===============nav-section===============*/
+/*===============header-section===============*/
+.header-section{
+        
+    .image{
+
+        img{
+            height: 580px;
+        }
+    }
+
+
+}
+/*====--------myskill-section-----------=======*/
+.myskill{
+
+    .skill{
+        margin-bottom: 30px;
+        svg{
+            width: 65px;
+            height: 65px;
+        }
+
+    }
+}
+/*========--------projects-section-----------===*/
+/*===============about-section===============*/
+/*===============contact-section===============*/
+.contact{
+
+    .location{
+
+        iframe{
+            height: 280px;
+        }
+    }
+
+
+    .connect-me{
+        padding: 25px;
+    }
+}
+/*===============footer-section===============*/
+/*==============media-section===============*/
+
+
+} 
+@media only screen and (max-width: 480px){
+
+
+/*===============nav-section===============*/
+/*===============header-section===============*/
+.header-section{
+        
+    .image{
+
+        img{
+            height: 580px;
+        }
+    }
+
+
+}
+/*====--------myskill-section-----------=======*/
+/*========--------projects-section-----------===*/
+/*===============about-section===============*/
+/*===============contact-section===============*/
+.contact{
+
+    .connect-me{
+        padding: 40px;
+    }
+}
+/*===============footer-section===============*/
+/*==============media-section===============*/
+
+
+} 
+@media only screen and (max-width: 380px){
+
+
+/*===============nav-section===============*/
+/*===============header-section===============*/
+.header-section{
+        
+    .image{
+
+        img{
+            height: 580px;
+        }
+    }
+
+
+}
+/*====--------myskill-section-----------=======*/
+/*========--------projects-section-----------===*/
+/*===============about-section===============*/
+/*===============contact-section===============*/
+.contact{
+
+    .connect-me{
+        padding: 40px;
+    }
+}
+/*===============footer-section===============*/
+/*==============media-section===============*/
+
+
+} 

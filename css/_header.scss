@@ -22,7 +22,9 @@
         box-shadow: $shadow;
         border-radius: 15px;
 
-        
+        .cert-btn{
+            display: none;
+        }
 
     }
     .image{
