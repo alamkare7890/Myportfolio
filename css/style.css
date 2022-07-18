@@ -8,6 +8,7 @@
   box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
   text-transform: uppercase;
   cursor: pointer;
+  display: inline-block;
 }
 
 .navigation .nav-btn, .social-icon li .icon, .social-icon li .name-icon, .social-icon li {
@@ -531,7 +532,7 @@ a {
   text-transform: uppercase;
 }
 .about-me .about-nav li {
-  width: 33%;
+  width: 50%;
 }
 .about-me .about-nav li a {
   font-size: 0.85rem;
@@ -545,6 +546,32 @@ a {
   margin: 0 20px;
   border: none;
   border-radius: 8px;
+}
+.about-me .mysecondary, .about-me .myhsecondary, .about-me .mysecondary, .about-me .internship, .about-me .self-tell {
+  padding: 50px;
+  margin: 50px 0;
+  background-color: #212428;
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  border-radius: 15px;
+}
+.about-me .mysecondary h3, .about-me .myhsecondary h3, .about-me .mysecondary h3, .about-me .internship h3, .about-me .self-tell h3 {
+  color: #fff;
+}
+.about-me .mysecondary .myschl, .about-me .myhsecondary .myschl, .about-me .mysecondary .myschl, .about-me .internship .myschl, .about-me .self-tell .myschl {
+  color: #c4cfde;
+  padding: 10px 0;
+}
+.about-me .mysecondary .line, .about-me .myhsecondary .line, .about-me .mysecondary .line, .about-me .internship .line, .about-me .self-tell .line {
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+.about-me .mysecondary .date, .about-me .myhsecondary .date, .about-me .mysecondary .date, .about-me .internship .date, .about-me .self-tell .date {
+  margin-bottom: 20px;
+  border-radius: 10px;
 }
 
 /*===============contact-section===============*/

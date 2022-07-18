@@ -10,7 +10,7 @@
         border: none;
         text-transform: uppercase;
         li{
-            width: 33%;
+            width: 50%;
 
             a{
                 font-size: 0.85rem;
@@ -30,7 +30,30 @@
         }
 
     }
+    .mysecondary, .myhsecondary, .mysecondary, .internship, .self-tell{
+        padding: 50px;
+        margin: 50px 0;
+        @include box;
+        border-radius: 15px;
 
+        h3{
+            color: $headColor;
+        }
+        .myschl{
+            color: $textColor;
+            padding: 10px 0;
+        }
+        .line{
+            @include line;
+            -webkit-line-clamp: 3;
+
+        }
+    
+        .date{
+            margin-bottom: 20px;    
+            border-radius: 10px;
+        }
+    }
 
 
 }
