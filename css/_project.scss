@@ -1,5 +1,5 @@
 .my-project{
-    @include section;
+    @extend %section;
 
     .project-head{
         padding: 20px 0;

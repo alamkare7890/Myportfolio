@@ -371,7 +371,17 @@
 
 }
 /*====--------myskill-section-----------=======*/
+.about-me{
+    
+    .mysecondary, .myhsecondary, .mysecondary, .internship, .self-tell{
+        padding: 30px;
+
+    
+
+    }
+}
 /*========--------projects-section-----------===*/
+
 /*===============about-section===============*/
 /*===============contact-section===============*/
 /*===============footer-section===============*/
@@ -396,6 +406,15 @@
 
 }
 /*====--------myskill-section-----------=======*/
+.about-me{
+
+    .mysecondary, .myhsecondary, .mysecondary, .internship, .self-tell{
+        padding: 30px;
+
+    
+
+    }
+}
 /*========--------projects-section-----------===*/
 /*===============about-section===============*/
 /*===============contact-section===============*/
@@ -441,6 +460,23 @@
 
 }
 /*====--------myskill-section-----------=======*/
+.about-me{
+
+    .about-nav {
+
+        li{
+
+            a{
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .mysecondary, .myhsecondary, .mysecondary, .internship, .self-tell{
+        margin: 50px 0 0 0;  
+    }
+}
+
 /*========--------projects-section-----------===*/
 .my-project{
 
@@ -460,6 +496,16 @@
     .location{
         margin-bottom: 40px;
     }
+    .connect-me{
+
+        .phone, .email{
+
+            span{
+                font-size: 1rem;
+            }
+        }
+
+    }
 }
 /*===============footer-section===============*/
 /*==============media-section===============*/
@@ -476,9 +522,7 @@
     
     .resume{
         padding: 30px;
-        .cert-btn{
-            margin-top: 30px;
-        }
+       
 
 
     } 
@@ -526,10 +570,17 @@
 /*===============header-section===============*/
 .header-section{
         
-    .image{
+    .resume{
 
+        .cert-btn{
+            margin-top: 30px;
+        }
+    }
+
+    .image{
+        padding-top: 30px;
         img{
-            height: 580px;
+            height: 450px;
         }
     }
 
@@ -540,15 +591,51 @@
 
     .skill{
         margin-bottom: 30px;
+
+        h3{
+            padding-top: 0;
+        }
+
         svg{
-            width: 65px;
-            height: 65px;
+            width: 60px;
+            height: 60px;
         }
 
     }
 }
 /*========--------projects-section-----------===*/
+.my-project{
+
+    .my-demo{
+        margin-bottom: 30px;
+    }
+
+}
 /*===============about-section===============*/
+.about-me{
+
+    .about-nav{
+
+        li{
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+    }
+
+    .mysecondary, .myhsecondary, .mysecondary, .internship, .self-tell{
+        padding: 20px 15px;
+        margin: 0 -15px;
+        margin-top: 30px;
+        
+        p{
+            -webkit-line-clamp: 2;
+        }
+
+    
+    }
+
+}
 /*===============contact-section===============*/
 .contact{
 
@@ -562,15 +649,39 @@
 
     .connect-me{
         padding: 25px;
+
+        .phone, .email{
+            padding: 10px 0;
+            padding-top: 0;
+        }
+
     }
 }
 /*===============footer-section===============*/
+.footer{
+    padding-bottom: 30px;
+}
 /*==============media-section===============*/
 
 
 } 
 @media only screen and (max-width: 480px){
+%section {
+    padding-bottom: 30px;
+}
+%mainBtn{
+    padding: 12px 15px;
 
+}
+.main-head{
+    font-size: 2rem;
+}
+.see-btn{
+
+    padding: 5px;
+
+
+}
 
 /*===============nav-section===============*/
 /*===============header-section===============*/
@@ -579,20 +690,49 @@
     .image{
 
         img{
-            height: 580px;
+            height: 400px;
         }
     }
 
+    .image::before{
+        height: 300px;
+    }
+    .resume{
 
+        .cv-btn{
+            margin-top: 30px;
+        }
+    }
 }
 /*====--------myskill-section-----------=======*/
 /*========--------projects-section-----------===*/
+.my-project{
+
+    .my-demo{
+
+        .layout{
+            height: 200px;
+        }
+    }
+
+}
 /*===============about-section===============*/
 /*===============contact-section===============*/
 .contact{
 
+    .location{
+        margin-bottom: 30px;
+        iframe{
+            height: 200px;
+        }
+
+    }
+
     .connect-me{
-        padding: 40px;
+        padding: 15px;
+
+        
+
     }
 }
 /*===============footer-section===============*/
@@ -610,7 +750,6 @@
     .image{
 
         img{
-            height: 580px;
         }
     }
 
@@ -623,7 +762,6 @@
 .contact{
 
     .connect-me{
-        padding: 40px;
     }
 }
 /*===============footer-section===============*/

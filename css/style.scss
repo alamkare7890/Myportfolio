@@ -176,7 +176,7 @@ ul{
     box-shadow: $shadow;
 }
 
-@mixin section {
+%section {
     padding-bottom: 50px;
 }
 @mixin line{

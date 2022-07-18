@@ -152,6 +152,10 @@ ul{
 }
 */
 /*=============fonts-==============*/
+.footer, .contact, .about-me, .my-project, .myskill, .header-section {
+  padding-bottom: 50px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -285,7 +289,6 @@ a {
 
 /*===============nav-section===============*/
 .header-section {
-  padding-bottom: 50px;
   padding-top: 0;
 }
 .header-section .myintro {
@@ -446,9 +449,6 @@ a {
   }
 }
 /*====--------myskill-section-----------=======*/
-.myskill {
-  padding-bottom: 50px;
-}
 .myskill .skill {
   padding: 30px;
   background-color: #212428;
@@ -477,9 +477,6 @@ a {
 }
 
 /*========--------projects-section-----------===*/
-.my-project {
-  padding-bottom: 50px;
-}
 .my-project .project-head {
   padding: 20px 0;
 }
@@ -518,9 +515,6 @@ a {
 }
 
 /*===============about-section===============*/
-.about-me {
-  padding-bottom: 50px;
-}
 .about-me .about-nav {
   padding: 20px 0;
   align-items: center;
@@ -561,7 +555,7 @@ a {
   color: #c4cfde;
   padding: 10px 0;
 }
-.about-me .mysecondary .line, .about-me .myhsecondary .line, .about-me .mysecondary .line, .about-me .internship .line, .about-me .self-tell .line {
+.about-me .mysecondary p, .about-me .myhsecondary p, .about-me .mysecondary p, .about-me .internship p, .about-me .self-tell p {
   overflow: hidden;
   -webkit-line-clamp: 2;
   display: -webkit-box;
@@ -575,9 +569,6 @@ a {
 }
 
 /*===============contact-section===============*/
-.contact {
-  padding-bottom: 50px;
-}
 .contact .location {
   padding: 20px;
   background-color: #212428;
@@ -619,7 +610,6 @@ a {
 
 /*===============footer-section===============*/
 .footer {
-  padding-bottom: 50px;
   text-align: center;
 }
 .footer p {
@@ -968,6 +958,9 @@ a {
     height: 650px;
   }
   /*====--------myskill-section-----------=======*/
+  .about-me .mysecondary, .about-me .myhsecondary, .about-me .mysecondary, .about-me .internship, .about-me .self-tell {
+    padding: 30px;
+  }
   /*========--------projects-section-----------===*/
   /*===============about-section===============*/
   /*===============contact-section===============*/
@@ -981,6 +974,9 @@ a {
     height: 580px;
   }
   /*====--------myskill-section-----------=======*/
+  .about-me .mysecondary, .about-me .myhsecondary, .about-me .mysecondary, .about-me .internship, .about-me .self-tell {
+    padding: 30px;
+  }
   /*========--------projects-section-----------===*/
   /*===============about-section===============*/
   /*===============contact-section===============*/
@@ -1006,6 +1002,12 @@ a {
     height: 600px;
   }
   /*====--------myskill-section-----------=======*/
+  .about-me .about-nav li a {
+    font-size: 1rem;
+  }
+  .about-me .mysecondary, .about-me .myhsecondary, .about-me .mysecondary, .about-me .internship, .about-me .self-tell {
+    margin: 50px 0 0 0;
+  }
   /*========--------projects-section-----------===*/
   .my-project .my-demo .btn-box {
     text-align: center;
@@ -1015,6 +1017,9 @@ a {
   .contact .location {
     margin-bottom: 40px;
   }
+  .contact .connect-me .phone span, .contact .connect-me .email span {
+    font-size: 1rem;
+  }
   /*===============footer-section===============*/
   /*==============media-section===============*/
 }
@@ -1023,9 +1028,6 @@ a {
   /*===============header-section===============*/
   .header-section .resume {
     padding: 30px;
-  }
-  .header-section .resume .cert-btn {
-    margin-top: 30px;
   }
   .header-section .image img {
     height: 580px;
@@ -1049,19 +1051,43 @@ a {
   }
   /*===============nav-section===============*/
   /*===============header-section===============*/
+  .header-section .resume .cert-btn {
+    margin-top: 30px;
+  }
+  .header-section .image {
+    padding-top: 30px;
+  }
   .header-section .image img {
-    height: 580px;
+    height: 450px;
   }
   /*====--------myskill-section-----------=======*/
   .myskill .skill {
     margin-bottom: 30px;
   }
+  .myskill .skill h3 {
+    padding-top: 0;
+  }
   .myskill .skill svg {
-    width: 65px;
-    height: 65px;
+    width: 60px;
+    height: 60px;
   }
   /*========--------projects-section-----------===*/
+  .my-project .my-demo {
+    margin-bottom: 30px;
+  }
   /*===============about-section===============*/
+  .about-me .about-nav li {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .about-me .mysecondary, .about-me .myhsecondary, .about-me .mysecondary, .about-me .internship, .about-me .self-tell {
+    padding: 20px 15px;
+    margin: 0 -15px;
+    margin-top: 30px;
+  }
+  .about-me .mysecondary p, .about-me .myhsecondary p, .about-me .mysecondary p, .about-me .internship p, .about-me .self-tell p {
+    -webkit-line-clamp: 2;
+  }
   /*===============contact-section===============*/
   .contact .location iframe {
     height: 280px;
@@ -1069,21 +1095,55 @@ a {
   .contact .connect-me {
     padding: 25px;
   }
+  .contact .connect-me .phone, .contact .connect-me .email {
+    padding: 10px 0;
+    padding-top: 0;
+  }
   /*===============footer-section===============*/
+  .footer {
+    padding-bottom: 30px;
+  }
   /*==============media-section===============*/
 }
 @media only screen and (max-width: 480px) {
+  .header-section, .myskill, .my-project, .about-me, .contact, .footer {
+    padding-bottom: 30px;
+  }
+  .my-btn {
+    padding: 12px 15px;
+  }
+  .main-head {
+    font-size: 2rem;
+  }
+  .see-btn {
+    padding: 5px;
+  }
   /*===============nav-section===============*/
   /*===============header-section===============*/
   .header-section .image img {
-    height: 580px;
+    height: 400px;
+  }
+  .header-section .image::before {
+    height: 300px;
+  }
+  .header-section .resume .cv-btn {
+    margin-top: 30px;
   }
   /*====--------myskill-section-----------=======*/
   /*========--------projects-section-----------===*/
+  .my-project .my-demo .layout {
+    height: 200px;
+  }
   /*===============about-section===============*/
   /*===============contact-section===============*/
+  .contact .location {
+    margin-bottom: 30px;
+  }
+  .contact .location iframe {
+    height: 200px;
+  }
   .contact .connect-me {
-    padding: 40px;
+    padding: 15px;
   }
   /*===============footer-section===============*/
   /*==============media-section===============*/
@@ -1091,16 +1151,10 @@ a {
 @media only screen and (max-width: 380px) {
   /*===============nav-section===============*/
   /*===============header-section===============*/
-  .header-section .image img {
-    height: 580px;
-  }
   /*====--------myskill-section-----------=======*/
   /*========--------projects-section-----------===*/
   /*===============about-section===============*/
   /*===============contact-section===============*/
-  .contact .connect-me {
-    padding: 40px;
-  }
   /*===============footer-section===============*/
   /*==============media-section===============*/
 }/*# sourceMappingURL=style.css.map */

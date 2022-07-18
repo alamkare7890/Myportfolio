@@ -1,5 +1,5 @@
 .contact{
-    @include section;
+    @extend %section;
 
     .location{
         padding: 20px;

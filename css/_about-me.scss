@@ -1,5 +1,5 @@
 .about-me{
-    @include section;
+    @extend %section;
 
     .about-nav{
         padding: 20px 0;
@@ -29,8 +29,8 @@
 
         }
 
-    }
-    .mysecondary, .myhsecondary, .mysecondary, .internship, .self-tell{
+    }.mysecondary, .myhsecondary, .mysecondary, .internship, .self-tell{
+    
         padding: 50px;
         margin: 50px 0;
         @include box;
@@ -43,7 +43,7 @@
             color: $textColor;
             padding: 10px 0;
         }
-        .line{
+        p{
             @include line;
             -webkit-line-clamp: 3;
 
