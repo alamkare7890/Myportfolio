@@ -25,7 +25,18 @@
                 object-position: top;
             }
         }
-
+        .layout::-webkit-scrollbar{
+            width: 5px;
+        }    
+        .layout::-webkit-scrollbar-track{
+            background-color: $bgColor;
+            box-shadow: $inner-shadow;
+        }
+        .layout::-webkit-scrollbar-thumb{
+            border-radius: 5px;
+            box-shadow: $shadow;
+            background-color: $primeColor;
+        }
         h3{
             color: $headColor;
             padding-top: 25px;

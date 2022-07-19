@@ -203,6 +203,20 @@ html,body{
     position: relative
 
 }
+body::-webkit-scrollbar{
+    width: 8px;
+
+}
+body::-webkit-scrollbar-track{
+    background-color: $bgColor;
+    box-shadow: $inner-shadow;
+}
+body::-webkit-scrollbar-thumb{
+
+    border-radius: 15px;
+    box-shadow: $shadow;
+    background-color: $primeColor;
+}
 ul{
     list-style-type: none;
 
@@ -210,6 +224,11 @@ ul{
 a{
     text-decoration: none;
 }
+a:hover{
+    text-decoration: none;
+}
+
+
 .main-head{
     font-size: 3rem;
     font-weight: 700;

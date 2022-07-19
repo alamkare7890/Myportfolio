@@ -172,11 +172,30 @@ html, body {
   position: relative;
 }
 
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #1E2024;
+  box-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  background-color: #F8024E;
+}
+
 ul {
   list-style-type: none;
 }
 
 a {
+  text-decoration: none;
+}
+
+a:hover {
   text-decoration: none;
 }
 
@@ -558,6 +577,18 @@ a {
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
+}
+.my-project .my-demo .layout::-webkit-scrollbar {
+  width: 5px;
+}
+.my-project .my-demo .layout::-webkit-scrollbar-track {
+  background-color: #1E2024;
+  box-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
+}
+.my-project .my-demo .layout::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  background-color: #F8024E;
 }
 .my-project .my-demo h3 {
   color: #fff;
@@ -1299,4 +1330,9 @@ a {
   }
   /*===============footer-section===============*/
   /*==============media-section===============*/
+}
+@media only screen and (max-width: 361px) {
+  .header-section .resume .cv-btn {
+    margin-top: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */
