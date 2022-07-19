@@ -1,21 +1,23 @@
 .contact{
     @extend %section;
 
+
     .location{
         padding: 20px;
         @include box; 
         border-radius: 15px;      
+        margin-bottom: 30px;
         
         iframe{
             width: 100%;
-            height: 350px;
+            height: 340px;
         }
     }
     .connect-me{
         padding:  30px;
         @include box;
         border-radius: 15px;
-
+        margin-bottom: 30px;
         h3{
             color: $headColor;
         }

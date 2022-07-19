@@ -516,6 +516,17 @@
 
 
 /*===============nav-section===============*/
+.navigation{
+    padding: 5px 0;
+    .logo{  
+
+        img{
+            width: 150px;
+            height: 55px;
+        }
+    }
+
+}
 /*===============header-section===============*/
 .header-section{
         
@@ -565,8 +576,28 @@
 
     font-size: 2.5rem;
 }
+.social-icon{
+
+    li{
+
+        .icon{
+            width: 60px;
+            height: 60px;
+        }
+    }
+
+}
 
 /*===============nav-section===============*/
+.navigation{
+
+   
+    .nav-btn{
+        height: 55px;
+        width: 55px;
+    }
+
+}
 /*===============header-section===============*/
 .header-section{
         
@@ -582,6 +613,11 @@
         img{
             height: 450px;
         }
+
+
+    }
+    .image::before{
+        height: 350px;
     }
 
 
@@ -671,7 +707,7 @@
 }
 %mainBtn{
     padding: 12px 15px;
-
+    font-size: 0.80rem;
 }
 .main-head{
     font-size: 2rem;
@@ -682,34 +718,70 @@
 
 
 }
-
+.content-head{
+    padding: 10px  0;
+ 
+}
+.para{
+    font-size: 0.95rem;
+}
+.title{
+    font-size: 0.95rem;
+}
 /*===============nav-section===============*/
+.navigation{
+
+    .logo{  
+
+        img{
+            width: 120px;
+            height: 50px;
+        }
+    }
+   
+
+}
 /*===============header-section===============*/
 .header-section{
         
     .image{
-
+        margin: 0;
+        padding: 0;
         img{
             height: 400px;
         }
     }
 
     .image::before{
-        height: 300px;
+        height: 300px; 
     }
     .resume{
 
-        .cv-btn{
-            margin-top: 30px;
+    }
+    .myintro{
+        padding: 20px 0;
+
+        h1{
+            padding: 10px 0 0 0;
         }
+
     }
 }
 /*====--------myskill-section-----------=======*/
+.about-me{ 
+    .about-nav{
+        li{
+           a{
+            font-size: 0.80rem;
+           }
+        }
+    }
+}
 /*========--------projects-section-----------===*/
 .my-project{
 
     .my-demo{
-
+        padding: 20px;
         .layout{
             height: 200px;
         }
@@ -741,9 +813,40 @@
 
 } 
 @media only screen and (max-width: 380px){
+%section{
+    padding-bottom: 20px;
 
+}
+%mainBtn{
+    font-size: 0.75rem;
+}
+.main-head{
+    font-size: 1.5rem;
+
+}
+.secondary-head{
+    font-size: 1.2rem;
+
+}
+.small-head{
+    font-size: 1rem;
+
+}
 
 /*===============nav-section===============*/
+.navigation{
+    .logo{
+        img{
+            width: 100px;
+            height: 45px;
+        }
+    }
+    .nav-btn{
+        height: 50px;
+        width: 50px;
+    }
+
+}
 /*===============header-section===============*/
 .header-section{
         
@@ -752,15 +855,36 @@
         img{
         }
     }
+    .myintro{
 
+        h1{
+            font-size: 2rem;
+        }
+
+    }
 
 }
 /*====--------myskill-section-----------=======*/
+.my-project{
+
+    .my-demo{
+
+        .layout{
+            height: 180px;
+        }
+    }
+}
 /*========--------projects-section-----------===*/
 /*===============about-section===============*/
 /*===============contact-section===============*/
 .contact{
 
+    .location{
+
+        iframe{
+            height: 180px;
+        }
+    }
     .connect-me{
     }
 }
