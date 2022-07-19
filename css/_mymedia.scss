@@ -421,7 +421,7 @@
 .contact{
 
     .connect-me{
-        padding: 40px;
+        padding: 50px;
     }
 }
 /*===============footer-section===============*/
@@ -579,7 +579,9 @@
 .social-icon{
 
     li{
-
+        .name-icon{
+            height: 60px;
+        }
         .icon{
             width: 60px;
             height: 60px;
@@ -712,6 +714,13 @@
 .main-head{
     font-size: 2rem;
 }
+.secondary-head{
+    font-size: 1.4rem;
+
+}
+.small-head{
+    font-size: 1.2rem;
+}
 .see-btn{
 
     padding: 5px;
@@ -821,13 +830,10 @@
     font-size: 0.75rem;
 }
 .main-head{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 
 }
-.secondary-head{
-    font-size: 1.2rem;
 
-}
 .small-head{
     font-size: 1rem;
 
