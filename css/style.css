@@ -1331,8 +1331,19 @@ a:hover {
   /*===============footer-section===============*/
   /*==============media-section===============*/
 }
-@media only screen and (max-width: 361px) {
-  .header-section .resume .cv-btn {
-    margin-top: 20px;
-  }
-}/*# sourceMappingURL=style.css.map */
+/*
+@media only screen and (max-width: 361px){
+
+.header-section{
+
+    .resume{
+
+        .cv-btn{
+            margin-top: 20px;
+        }
+
+    }
+}
+
+}
+*//*# sourceMappingURL=style.css.map */
