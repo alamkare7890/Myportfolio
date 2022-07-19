@@ -2,7 +2,8 @@ var myToggle = document.getElementById('menuBtn');
 
 menuBtn.onclick = function () {
 
-	menuBtn.classList.toggle('active');
+    menuBtn.classList.toggle('active');
+    
 }
 
 $(document).ready(function () {
@@ -23,6 +24,22 @@ $(document).ready(function () {
     
     
     })
+    /*=========small-nav adding class========*/
+    $('#menuBtn').click(function () {
+        $nav = 1;
+        if ($nav <= 50) {
+            $('#showNav').toggleClass('nav-show')
+        } else {
+        
+        }
+
+    
+        
+    
+    
+    
+    })
+    
 
 
 

@@ -242,7 +242,7 @@ a {
 
 .social-icon {
   position: fixed;
-  top: 50%;
+  top: 70%;
   right: 0;
   z-index: 10;
 }
@@ -390,13 +390,13 @@ a {
   background-color: #F8024E;
   transform: translateY(15px);
   border-radius: 3px;
-  transition: all 0.4s linear;
+  transition: all 0.4s;
 }
-.navigation .nav-btn:active:before {
+.navigation .nav-btn.active:before {
   box-shadow: none;
   transform: translateY(0) rotate(45deg);
 }
-.navigation .nav-btn:active:after {
+.navigation .nav-btn.active:after {
   transform: translateY(0) rotate(-45deg);
 }
 
@@ -447,15 +447,62 @@ a {
     opacity: 1;
   }
 }
-@media only screen and (max-width: 1200px) {
+.respon-nav {
+  display: none;
+}
+
+@media only screen and (max-width: 1199px) {
   .navigation .mynav {
-    display: none;
+    display: flex;
   }
   .navigation .nav-btn {
     display: flex;
   }
   .navigation .course-cer {
     display: none;
+  }
+  .respon-nav {
+    display: flex;
+    position: relative;
+    z-index: 10;
+  }
+  .respon-nav .nav-small {
+    background-color: transparent;
+    width: 230px;
+    padding: 10px;
+    position: fixed;
+    right: -230px;
+    top: 80px;
+  }
+  .respon-nav .nav-show {
+    right: 0;
+    transition: all 0.8s ease;
+  }
+  .respon-nav ul {
+    background-color: #212428;
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+    padding: 20px;
+  }
+  .respon-nav ul li {
+    padding-bottom: 15px;
+    text-transform: uppercase;
+  }
+  .respon-nav ul li a {
+    color: #fff;
+  }
+  .respon-nav ul li:hover a {
+    color: #F8024E;
+  }
+  .respon-nav .icon-list {
+    border-radius: 5px 0 0 5px;
+  }
+  .respon-nav .icon-list li {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .respon-nav .item-list {
+    border-radius: 0 5px 5px 0;
   }
 }
 /*====--------myskill-section-----------=======*/
