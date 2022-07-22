@@ -492,6 +492,7 @@ a:hover {
     position: fixed;
     right: -230px;
     top: 80px;
+    transition: all 0.8s ease;
   }
   .respon-nav .nav-show {
     right: 0;
@@ -1308,11 +1309,11 @@ a:hover {
   /*===============nav-section===============*/
   .navigation .logo img {
     width: 100px;
-    height: 45px;
+    height: 50px;
   }
   .navigation .nav-btn {
-    height: 50px;
-    width: 50px;
+    height: 48px;
+    width: 48px;
   }
   /*===============header-section===============*/
   .header-section .myintro h1 {

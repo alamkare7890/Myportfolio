@@ -135,10 +135,12 @@
             position: fixed;
             right: -230px;
             top: 80px;
+            transition: all 0.8s ease;
         }
         .nav-show{
             right: 0;
             transition: all 0.8s ease;
+
         }
         ul{
             @include box;
@@ -147,7 +149,7 @@
                 padding-bottom: 15px;
                 text-transform: uppercase;
                 a{
-                    color: $headColor; 
+                    color: $headColor;  
                 }
 
                
