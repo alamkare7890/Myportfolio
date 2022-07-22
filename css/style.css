@@ -11,7 +11,7 @@
   display: inline-block;
 }
 
-.navigation .nav-btn, .social-icon li .icon, .social-icon li .name-icon, .social-icon li {
+.navigation .nav-btn, .icon-top-btn, .social-icon li .icon, .social-icon li .name-icon, .social-icon li {
   justify-content: center;
   align-items: center;
 }
@@ -170,6 +170,7 @@ html, body {
   font-family: "Poppins", sans-serif;
   background-color: #212428;
   position: relative;
+  scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {
@@ -264,13 +265,13 @@ a:hover {
 
 .social-icon {
   position: fixed;
-  top: 70%;
-  right: 0;
+  top: 60%;
+  left: 0;
   z-index: 10;
 }
 .social-icon li {
   margin: 10px 0;
-  transform: translateX(100px);
+  transform: translateX(-100px);
   padding-bottom: 15px;
   transition: all 0.5s ease;
 }
@@ -284,6 +285,7 @@ a:hover {
 .social-icon li .icon {
   width: 70px;
   height: 70px;
+  border-radius: 0 5px 5px 0;
   font-size: 1.5rem;
   background-color: #212428;
   box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
@@ -316,6 +318,22 @@ a:hover {
 .btn-box {
   text-align: center;
   margin-bottom: 20px;
+}
+
+.icon-top-btn {
+  width: 65px;
+  height: 65px;
+  background-color: #212428;
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  cursor: pointer;
+  background-color: #1E2024;
+  text-decoration: none;
+  color: #fff;
 }
 
 /*===============nav-section===============*/

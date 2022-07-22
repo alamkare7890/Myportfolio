@@ -200,7 +200,8 @@ html,body{
     line-height: 1.5;
     font-family: $mainFont;
     background-color: $mainbgColor; 
-    position: relative
+    position: relative;
+    scroll-behavior: smooth;
 
 }
 body::-webkit-scrollbar{
@@ -284,12 +285,12 @@ a:hover{
 }
 .social-icon{
     position: fixed;
-    top: 70%;     
-    right: 0;
+    top: 60%;     
+    left: 0;
     z-index: 10;
     li{
         margin: 10px 0;
-        transform: translateX(100px);
+        transform: translateX(-100px);
         @extend %flexCenter;
         padding-bottom: 15px; 
         transition: all 0.5s ease;
@@ -306,6 +307,7 @@ a:hover{
             width: 70px;
             height: 70px;
             @extend %flexCenter;
+            border-radius: 0 5px 5px 0;
             font-size: 1.5rem;  
             @include box;
             color: $headColor;
@@ -347,7 +349,22 @@ a:hover{
     text-align: center;
     margin-bottom: 20px;
 }
-
+.icon-top-btn{
+    width: 65px;
+    height: 65px;
+    @extend %flexCenter;
+    @include box;
+    border-radius: 5px;
+    position: fixed;    
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    cursor: pointer;
+    background-color: $bgColor;
+    text-decoration: none;  
+    color: $headColor;
+    
+}
 /*===============nav-section===============*/
 @import "header";
 /*===============nav-section===============*/
