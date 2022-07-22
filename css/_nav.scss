@@ -1,6 +1,29 @@
 .navigation{
     justify-content: space-between;
     padding: 10px 0;
+    transition: all 0.8s ease;
+    animation: navBack 0.8s ease ; 
+
+    @keyframes navBack {    
+        0%{
+            opacity: 0.4;
+
+        }
+        50%{
+            opacity: 0.6;
+
+        } 
+        75%{
+            opacity: 0.8;
+
+        }
+        100%{
+            opacity: 1;
+
+        }
+        
+    }
+
     .logo{  
 
         img{
@@ -35,9 +58,11 @@
         @extend %flexCenter;
         cursor: pointer;
         display: none; 
-
+        transition: all 0.5s ease;
     } 
-
+    .nav-btn:hover{
+        box-shadow: $shadow-2;
+    }
     .nav-btn::before{
         content: " ";
         position: absolute;

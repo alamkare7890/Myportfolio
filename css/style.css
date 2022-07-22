@@ -221,6 +221,14 @@ a:hover {
   padding-top: 10px;
 }
 
+.line-control {
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+}
+
 .flex-content {
   display: flex;
   flex-wrap: wrap;
@@ -252,6 +260,21 @@ a:hover {
 
 .my-btn {
   color: #F8024E;
+  transition: all 0.5s ease;
+}
+
+.my-btn:hover {
+  box-shadow: inset 21px 21px 19px #181a1d, inset -21px -21px 19px #202225;
+  color: #878e99;
+}
+
+.learning {
+  text-decoration: underline;
+  transition: all 0.5s ease;
+}
+
+.learning:hover {
+  color: #fff;
 }
 
 .see-btn {
@@ -334,6 +357,12 @@ a:hover {
   background-color: #1E2024;
   text-decoration: none;
   color: #fff;
+  transition: all 0.5s ease;
+}
+
+.icon-top-btn:hover {
+  box-shadow: inset 21px 21px 19px #181a1d, inset -21px -21px 19px #202225;
+  color: #878e99;
 }
 
 /*===============nav-section===============*/
@@ -446,6 +475,37 @@ a:hover {
 .navigation {
   justify-content: space-between;
   padding: 10px 0;
+  transition: all 0.8s ease;
+  -webkit-animation: navBack 0.8s ease;
+          animation: navBack 0.8s ease;
+}
+@-webkit-keyframes navBack {
+  0% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes navBack {
+  0% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .navigation .logo img {
   width: 180px;
@@ -470,6 +530,10 @@ a:hover {
   border-radius: 5px;
   cursor: pointer;
   display: none;
+  transition: all 0.5s ease;
+}
+.navigation .nav-btn:hover {
+  box-shadow: inset 21px 21px 19px #181a1d, inset -21px -21px 19px #202225;
 }
 .navigation .nav-btn::before {
   content: " ";
@@ -702,6 +766,10 @@ a:hover {
   font-size: 0.85rem;
   color: #878e99;
   border-radius: 8px;
+  text-decoration: none;
+}
+.about-me .about-nav li a:hover {
+  border: none;
 }
 .about-me .about-nav li a.active {
   background-color: #212428;
@@ -710,6 +778,8 @@ a:hover {
   margin: 0 20px;
   border: none;
   border-radius: 8px;
+  transition: all 0.5s ease;
+  color: #F8024E;
 }
 .about-me .mysecondary, .about-me .myhsecondary, .about-me .mysecondary, .about-me .internship, .about-me .self-tell {
   padding: 50px;
@@ -748,7 +818,7 @@ a:hover {
 }
 .contact .location iframe {
   width: 100%;
-  height: 340px;
+  height: 320px;
 }
 .contact .connect-me {
   padding: 30px;
@@ -1196,6 +1266,10 @@ a:hover {
   /*==============media-section===============*/
 }
 @media only screen and (max-width: 768px) {
+  .icon-top-btn {
+    width: 60px;
+    height: 60px;
+  }
   /*===============nav-section===============*/
   .navigation {
     padding: 5px 0;
@@ -1234,6 +1308,10 @@ a:hover {
   .social-icon li .icon {
     width: 60px;
     height: 60px;
+  }
+  .icon-top-btn {
+    width: 55px;
+    height: 55px;
   }
   /*===============nav-section===============*/
   .navigation .nav-btn {
@@ -1327,6 +1405,10 @@ a:hover {
   .title {
     font-size: 0.95rem;
   }
+  .icon-top-btn {
+    width: 50px;
+    height: 50px;
+  }
   /*===============nav-section===============*/
   .navigation .logo img {
     width: 120px;
@@ -1386,6 +1468,10 @@ a:hover {
   }
   .small-head {
     font-size: 1rem;
+  }
+  .icon-top-btn {
+    width: 45px;
+    height: 45px;
   }
   /*===============nav-section===============*/
   .navigation .logo img {

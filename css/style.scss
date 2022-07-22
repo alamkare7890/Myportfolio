@@ -247,6 +247,14 @@ a:hover{
     font-weight: 500;
     padding-top: 10px;
 }
+.line-control{
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+
+}
 .flex-content{
     display: flex;
     flex-wrap: wrap;
@@ -275,7 +283,20 @@ a:hover{
 .my-btn{
     @extend %mainBtn;
     color: $primeColor;  
+    transition: all 0.5s ease;
 }  
+.my-btn:hover{
+    box-shadow: $shadow-2;
+    color: $secondheadColor;
+}
+
+.learning{
+    text-decoration: underline;
+    transition: all 0.5s ease;
+}
+.learning:hover{
+    color: #fff;
+}
 .see-btn{
     padding: 12px 20px;
 }
@@ -363,9 +384,13 @@ a:hover{
     background-color: $bgColor;
     text-decoration: none;  
     color: $headColor;
-    
+    transition: all 0.5s ease;
 }  
-/*===============nav-section===============*/
+.icon-top-btn:hover{
+    box-shadow: $shadow-2;
+    color: $secondheadColor
+}
+/*===============nav-section===============*/ 
 @import "header";
 /*===============nav-section===============*/
 @import "nav";
