@@ -7,6 +7,7 @@ menuBtn.onclick = function () {
 }
 
 $(document).ready(function () {
+    
 
     /*=========nav adding class========*/
     $(window).scroll(function () {
@@ -38,15 +39,15 @@ $(document).ready(function () {
     
     
     
-    })
+    });
     /*==========top-btn============*/
-    top-btn.onclick = () => {
+    topBtn.oclick = () => {
         window.scrollTo({
             top: 0,
             behavior: 'smooth',
         
         })
-    
+     
     
     }
 
