@@ -1307,6 +1307,9 @@ a:hover {
   .main-head {
     font-size: 2.5rem;
   }
+  .social-icon {
+    top: 40%;
+  }
   .social-icon li .name-icon {
     height: 60px;
   }
@@ -1450,6 +1453,7 @@ a:hover {
   /*===============about-section===============*/
   /*===============contact-section===============*/
   .contact .location {
+    padding: 15px;
     margin-bottom: 30px;
   }
   .contact .location iframe {

@@ -581,7 +581,7 @@
     font-size: 2.5rem;
 }
 .social-icon{
-
+    top: 40%;
     li{
         .name-icon{
             height: 60px;
@@ -779,9 +779,7 @@
     .image::before{
         height: 300px; 
     }
-    .resume{
-
-    }
+   
     .myintro{
         padding: 20px 0;
 
@@ -875,16 +873,7 @@
 
 }
 /*===============header-section===============*/
-.header-section{
-        
-    .image{
 
-        img{
-        }
-    }
-  
-
-}
 /*====--------myskill-section-----------=======*/ 
 .my-project{
 
@@ -906,8 +895,7 @@
             height: 180px;
         }
     }
-    .connect-me{
-    }
+    
 }
 /*===============footer-section===============*/
 /*==============media-section===============*/
