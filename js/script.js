@@ -47,12 +47,19 @@ $(document).ready(function () {
             behavior: 'smooth',
         
         })
-     
+      
     
     }
     /*======aos======*/
     AOS.init()
 
+    /*========Onhover image=======*/
+    /*$(".layout").mouseover(function(){
+        $("img").addClass('hoverIt');
+    });
+    $(".layout").mouseout(function(){
+        $("img").removeClass('hoverIt');
+    });*/
 
 
 
